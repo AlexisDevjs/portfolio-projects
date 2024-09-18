@@ -28,12 +28,25 @@ export default tseslint.config(
       '@typescript-eslint/consistent-type-imports': 'error',
       '@stylistic/space-before-function-paren': 'error',
       '@stylistic/jsx-one-expression-per-line': 'off',
-      '@stylistic/arrow-parens': 'off',
+      '@stylistic/arrow-parens': ['error', 'always'],
       '@stylistic/eol-last': 'error',
       '@stylistic/comma-dangle': 'error',
       '@stylistic/jsx-quotes': ['error', 'prefer-single'],
+      '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
       '@stylistic/semi': ['error', 'never'],
-      '@stylistic/no-trailing-spaces': 'error'
+      '@stylistic/no-trailing-spaces': 'error',
+      '@stylistic/keyword-spacing': ['error', { before: true, after: true }],
+      '@stylistic/space-before-blocks': ['error', 'always'],
+      '@stylistic/block-spacing': ['error', 'always'],
+      '@stylistic/comma-spacing': ['error', { before: false, after: true }],
+      '@stylistic/space-infix-ops': ['error'],
+      '@stylistic/spaced-comment': ['error', 'always'],
+      '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+      '@stylistic/no-multi-spaces': 'error',
+      '@stylistic/array-bracket-spacing': ['error', 'never'],
+      '@stylistic/operator-linebreak': ['error', 'before'],
+      '@stylistic/space-in-parens': ['error', 'never'],
+      '@stylistic/template-curly-spacing': ['error', 'never']
     }
   }
 )
