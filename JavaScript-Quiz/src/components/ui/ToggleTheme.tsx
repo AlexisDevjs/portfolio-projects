@@ -1,6 +1,6 @@
 import './toggle-theme.css'
 import { useState } from 'react'
-import { useDarkMode } from '../hooks/useTheme'
+import { useDarkMode } from '../../hooks/useTheme'
 
 export function ThemeToggle () {
   const [isToggled, setToggle] = useState(false)
