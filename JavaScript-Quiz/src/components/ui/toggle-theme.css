@@ -2,7 +2,7 @@
   transform: scale(-1, 1);
 }
 .theme-toggle {
-  --theme-toggle__expand--duration: 500ms;
+  --theme-toggle__expand--duration: 400ms;
 }
 .theme-toggle__expand g circle,
 .theme-toggle__expand g path {

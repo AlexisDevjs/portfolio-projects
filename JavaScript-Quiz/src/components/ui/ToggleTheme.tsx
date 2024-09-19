@@ -1,23 +1,19 @@
+import { useTheme } from '../../hooks/useTheme'
 import './toggle-theme.css'
-import { useState } from 'react'
-import { useDarkMode } from '../../hooks/useTheme'
 
 export function ThemeToggle () {
-  const [isToggled, setToggle] = useState(false)
-  const { toggleDarkMode } = useDarkMode()
-
-  const handleClick = () => {
-    setToggle(!isToggled)
-    toggleDarkMode()
-  }
+  const { theme, toggleDarkMode } = useTheme()
+  const isDarkMode = theme === 'dark'
 
   return (
     <button
-      className={`theme-toggle ${isToggled ? 'theme-toggle--toggled' : ''}`}
+      className={`theme-toggle ${isDarkMode ? 'theme-toggle--toggled' : ''}`}
       type='button'
       title='Toggle theme'
       aria-label='Toggle theme'
-      onClick={handleClick}
+      onClick={() => {
+        toggleDarkMode()
+      }}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
