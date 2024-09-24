@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es el resultado de '2' + 2 en JavaScript?",
+    "answers": [
+      "4",
+      "\"22\"",
+      "undefined",
+      "NaN"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "question": "¿Qué es un closure en JavaScript?",
+    "answers": [
+      "Una función dentro de otra función que tiene acceso a las variables externas",
+      "Una propiedad especial de los objetos",
+      "Un tipo de error en tiempo de ejecución",
+      "Un ciclo que no tiene fin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "¿Qué tipo de dato es null en JavaScript?",
+    "answers": [
+      "undefined",
+      "object",
+      "null",
+      "boolean"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál es el resultado del siguiente código?",
+    "code": "const x = [1, 2, 3].map(n => n * 2)\\nconsole.log(x)",
+    "answers": [
+      "[2, 4, 6]",
+      "[1, 2, 3]",
+      "[1, 4, 9]",
+      "undefined"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo se define una función de flecha en JavaScript?",
+    "answers": [
+      "function myFunc() {}",
+      "(params) => {}",
+      "let myFunc = function() {}",
+      "Todas son válidas"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "question": "¿Cuál es el resultado de typeof NaN en JavaScript?",
+    "answers": [
+      "number",
+      "NaN",
+      "undefined",
+      "object"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "question": "¿Qué devuelve el siguiente código?",
+    "code": "const obj = { a: 1 }\\nconsole.log(obj.b?.c)",
+    "answers": [
+      "1",
+      "undefined",
+      "TypeError",
+      "null"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "question": "¿Cómo se crea un objeto en JavaScript?",
+    "answers": [
+      "let obj = { clave: \"valor\" }",
+      "let obj = ( clave: \"valor\" )",
+      "let obj = [ clave: \"valor\" ]",
+      "let obj = clave = \"valor\""
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "¿Qué hace el método Array.prototype.filter() en JavaScript?",
+    "answers": [
+      "Filtra los elementos del array que cumplen una condición",
+      "Modifica el array original",
+      "Devuelve el primer elemento que cumple la condición",
+      "Ordena el array"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "question": "¿Cuál es el resultado del siguiente código?",
+    "code": "let y = 1\\nif (y === '1') { console.log(true) } else { console.log(false) }",
+    "answers": [
+      "true",
+      "false",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": 1
+  }
+]

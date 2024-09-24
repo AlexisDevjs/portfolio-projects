@@ -12,3 +12,14 @@ export function getThemeFromStorage () {
 
   return theme
 }
+
+export async function fetchQuestions () {
+  try {
+    const response = await fetch('http://localhost:5173/questions.json')
+    return await response.json()
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message)
+    }
+  }
+}
