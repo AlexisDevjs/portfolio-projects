@@ -8,7 +8,7 @@ export default function StartGameButton ({ onStart }: Props) {
   const getQuestions = useQuestionsStore((state) => state.getQuestions)
 
   const handleClick = () => {
-    getQuestions(5)
+    getQuestions(10)
     if (onStart) onStart()
   }
 

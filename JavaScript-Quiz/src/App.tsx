@@ -14,10 +14,10 @@ export default function App () {
   return (
     <>
       <Header />
-      <div className='self-center h-full gird place-items-center'>
+      <main className='self-center h-full gird place-items-center'>
         {!startedGame && <StartGameButton onStart={handleClick} />}
         {startedGame && <Game />}
-      </div>
+      </main>
       <Footer />
     </>
   )

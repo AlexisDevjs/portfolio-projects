@@ -13,5 +13,24 @@ export const useQuestionsStore = create<State>((set) => ({
       .slice(0, limit)
 
     set({ questions: limitedQuestions })
+  },
+
+  selectAnswer: (questionId: number, answerIndex: number) => {
+    set((state) => {
+      const questions = state.questions.map((question) => {
+        if (question.id === questionId) {
+          const isCorrect = question.correctAnswer === answerIndex
+          return {
+            ...question,
+            selectedAnswer: answerIndex,
+            isCorrectSelectedAnswer: isCorrect
+          }
+        }
+
+        return question
+      })
+
+      return { questions }
+    })
   }
 }))

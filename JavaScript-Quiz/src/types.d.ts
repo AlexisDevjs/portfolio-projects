@@ -7,7 +7,7 @@ interface Question {
   answers: readonly [string, string, string, string]
   correctAnswer: number
   selectedAnswer?: number
-  isCorrectAnswer?: boolean
+  isCorrectSelectedAnswer?: boolean
 }
 
 type StateProperties = {
@@ -17,6 +17,7 @@ type StateProperties = {
 
 type StateActions = {
   getQuestions: (limit: number) => Promise<void>
+  selectAnswer: (questionId: number, answerIndex) => void
 }
 
 export type State = StateProperties & StateActions

@@ -1,4 +1,4 @@
-import type { Theme } from '../types'
+import type { Question, Theme } from '../types'
 
 export function getThemeFromStorage () {
   const savedTheme = localStorage.getItem('theme')
@@ -11,6 +11,22 @@ export function getThemeFromStorage () {
   const theme: Theme = match ? 'dark' : 'light'
 
   return theme
+}
+
+export function getBackgroundColor (question: Question, index: number) {
+  const { selectedAnswer, correctAnswer } = question
+
+  if (selectedAnswer === undefined) return 'transparent'
+
+  if (index !== selectedAnswer && index !== correctAnswer) {
+    return 'transparent'
+  }
+
+  if (index === correctAnswer) return 'green'
+
+  if (index === selectedAnswer) return 'red'
+
+  return 'transparent'
 }
 
 export async function fetchQuestions () {
