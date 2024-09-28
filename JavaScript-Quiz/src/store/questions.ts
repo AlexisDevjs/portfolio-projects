@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import type { State } from '../types'
 import { fetchQuestions } from '../lib/utils'
 
-export const useQuestionsStore = create<State>((set) => ({
+export const useQuestionsStore = create<State>((set, get) => ({
   questions: [],
   currentQuestion: 0,
 
@@ -32,5 +32,23 @@ export const useQuestionsStore = create<State>((set) => ({
 
       return { questions }
     })
+  },
+
+  goToNextQuestion: () => {
+    const { currentQuestion } = get()
+    const nextQuestion = currentQuestion + 1
+
+    if (currentQuestion < nextQuestion) {
+      set({ currentQuestion: nextQuestion })
+    }
+  },
+
+  goToPreviousQuestion: () => {
+    const { currentQuestion } = get()
+    const previousQuestion = currentQuestion - 1
+
+    if (currentQuestion > 0) {
+      set({ currentQuestion: previousQuestion })
+    }
   }
 }))
