@@ -34,7 +34,7 @@ export const useQuestionsStore = create<State>((set, get) => ({
     })
   },
 
-  goToNextQuestion: () => {
+  getNextQuestion: () => {
     const { currentQuestion } = get()
     const nextQuestion = currentQuestion + 1
 
@@ -43,7 +43,7 @@ export const useQuestionsStore = create<State>((set, get) => ({
     }
   },
 
-  goToPreviousQuestion: () => {
+  getPreviousQuestion: () => {
     const { currentQuestion } = get()
     const previousQuestion = currentQuestion - 1
 

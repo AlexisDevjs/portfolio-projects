@@ -5,8 +5,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark': '#25272c'
-      },
+        dark: '#25272c',
+        light: '#e9e9e9'
+      }
+    },
+    fontFamily: {
+      lato: ['Lato', 'sans-serif'],
+      comfortaa: ['Comfortaa', 'sans-serif']
     }
   },
   plugins: []

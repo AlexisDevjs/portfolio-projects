@@ -18,8 +18,8 @@ type StateProperties = {
 type StateActions = {
   getQuestions: (limit: number) => Promise<void>
   selectAnswer: (questionId: number, answerIndex) => void
-  goToNextQuestion: () => void
-  goToPreviousQuestion: () => void
+  getNextQuestion: () => void
+  getPreviousQuestion: () => void
 }
 
 export type State = StateProperties & StateActions

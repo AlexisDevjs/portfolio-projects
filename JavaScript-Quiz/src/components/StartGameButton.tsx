@@ -13,15 +13,12 @@ export default function StartGameButton ({ onStart }: Props) {
   }
 
   return (
-    <button onClick={handleClick}>
-      Start Game
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        aria-hidden='true'
-        fill='currentColor'
-        className='size-[26px]'
-        viewBox='0 0 32 32'
-      ></svg>
+    <button
+      type='button'
+      onClick={handleClick}
+      className='w-full sm:max-w-[315px] rounded-[3px] py-3 px-3 text-center font-bold text-black text-base bg-gradient-to-t from-[#F0DB4F] via-[#F0DB4F] to-[#e9cc0e] ring-1 ring-black hover:from-[#ecce09] hover:via-[#ecce09] hover:to-[#d4ba0d] transition-all duration-300 ease-out active:scale-95'
+    >
+      Empezar
     </button>
   )
 }

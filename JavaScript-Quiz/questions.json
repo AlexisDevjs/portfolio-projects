@@ -2,12 +2,7 @@
   {
     "id": 1,
     "question": "¿Cuál es el resultado de '2' + 2 en JavaScript?",
-    "answers": [
-      "4",
-      "\"22\"",
-      "undefined",
-      "NaN"
-    ],
+    "answers": ["4", "\"22\"", "undefined", "NaN"],
     "correctAnswer": 1
   },
   {
@@ -24,24 +19,14 @@
   {
     "id": 3,
     "question": "¿Qué tipo de dato es null en JavaScript?",
-    "answers": [
-      "undefined",
-      "object",
-      "null",
-      "boolean"
-    ],
+    "answers": ["undefined", "object", "null", "boolean"],
     "correctAnswer": 1
   },
   {
     "id": 4,
     "question": "¿Cuál es el resultado del siguiente código?",
-    "code": "const x = [1, 2, 3].map(n => n * 2)\\nconsole.log(x)",
-    "answers": [
-      "[2, 4, 6]",
-      "[1, 2, 3]",
-      "[1, 4, 9]",
-      "undefined"
-    ],
+    "code": "const x = [1, 2, 3].map(n => n * 2); console.log(x)",
+    "answers": ["[2, 4, 6]", "[1, 2, 3]", "[1, 4, 9]", "undefined"],
     "correctAnswer": 0
   },
   {
@@ -58,24 +43,14 @@
   {
     "id": 6,
     "question": "¿Cuál es el resultado de typeof NaN en JavaScript?",
-    "answers": [
-      "number",
-      "NaN",
-      "undefined",
-      "object"
-    ],
+    "answers": ["number", "NaN", "undefined", "object"],
     "correctAnswer": 0
   },
   {
     "id": 7,
     "question": "¿Qué devuelve el siguiente código?",
     "code": "const obj = { a: 1 }\\nconsole.log(obj.b?.c)",
-    "answers": [
-      "1",
-      "undefined",
-      "TypeError",
-      "null"
-    ],
+    "answers": ["1", "undefined", "TypeError", "null"],
     "correctAnswer": 1
   },
   {
@@ -104,12 +79,7 @@
     "id": 10,
     "question": "¿Cuál es el resultado del siguiente código?",
     "code": "let y = 1\\nif (y === '1') { console.log(true) } else { console.log(false) }",
-    "answers": [
-      "true",
-      "false",
-      "undefined",
-      "null"
-    ],
+    "answers": ["true", "false", "undefined", "null"],
     "correctAnswer": 1
   }
 ]

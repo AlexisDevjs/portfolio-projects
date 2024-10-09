@@ -16,17 +16,17 @@ export function getThemeFromStorage () {
 export function getBackgroundColor (question: Question, index: number) {
   const { selectedAnswer, correctAnswer } = question
 
-  if (selectedAnswer === undefined) return 'transparent'
+  if (selectedAnswer === undefined) return 'white'
 
   if (index !== selectedAnswer && index !== correctAnswer) {
-    return 'transparent'
+    return 'white'
   }
 
   if (index === correctAnswer) return 'green'
 
   if (index === selectedAnswer) return 'red'
 
-  return 'transparent'
+  return 'white'
 }
 
 export async function fetchQuestions () {
