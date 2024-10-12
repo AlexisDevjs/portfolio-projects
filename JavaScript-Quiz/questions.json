@@ -1,85 +1,212 @@
 [
   {
     "id": 1,
-    "question": "¿Cuál es el resultado de '2' + 2 en JavaScript?",
-    "answers": ["4", "\"22\"", "undefined", "NaN"],
+    "question": "¿Cuál es el símbolo para comentarios de una sola línea en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["<!-- -->", "//", "/* */", "#"],
     "correctAnswer": 1
   },
   {
     "id": 2,
-    "question": "¿Qué es un closure en JavaScript?",
-    "answers": [
-      "Una función dentro de otra función que tiene acceso a las variables externas",
-      "Una propiedad especial de los objetos",
-      "Un tipo de error en tiempo de ejecución",
-      "Un ciclo que no tiene fin"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "id": 3,
-    "question": "¿Qué tipo de dato es null en JavaScript?",
-    "answers": ["undefined", "object", "null", "boolean"],
+    "question": "¿JavaScript es un lenguaje de...?",
+    "difficulty": "Easy",
+    "answers": ["Tipado fuerte", "Tipado dinámico", "Tipado estático", "Tipado débil"],
     "correctAnswer": 1
   },
   {
+    "id": 3,
+    "question": "¿Cómo puedes declarar una variable en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["var", "let", "const", "Todas las anteriores"],
+    "correctAnswer": 3
+  },
+  {
     "id": 4,
-    "question": "¿Cuál es el resultado del siguiente código?",
-    "code": "const x = [1, 2, 3].map(n => n * 2); console.log(x)",
-    "answers": ["[2, 4, 6]", "[1, 2, 3]", "[1, 4, 9]", "undefined"],
-    "correctAnswer": 0
+    "question": "¿Cuál es el símbolo para comentarios de una sola línea en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["<!-- -->", "//", "/* */", "#"],
+    "correctAnswer": 1
   },
   {
     "id": 5,
-    "question": "¿Cómo se define una función de flecha en JavaScript?",
-    "answers": [
-      "function myFunc() {}",
-      "(params) => {}",
-      "let myFunc = function() {}",
-      "Todas son válidas"
-    ],
+    "question": "¿Cuál es el tipo de dato para cadenas de texto en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["Number", "String", "Boolean", "Object"],
     "correctAnswer": 1
   },
   {
     "id": 6,
-    "question": "¿Cuál es el resultado de typeof NaN en JavaScript?",
-    "answers": ["number", "NaN", "undefined", "object"],
-    "correctAnswer": 0
-  },
-  {
-    "id": 7,
-    "question": "¿Qué devuelve el siguiente código?",
-    "code": "const obj = { a: 1 }\\nconsole.log(obj.b?.c)",
-    "answers": ["1", "undefined", "TypeError", "null"],
+    "question": "¿Cuál es el resultado de 2 + 2 en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["22", "4", "undefined", "null"],
     "correctAnswer": 1
   },
   {
-    "id": 8,
-    "question": "¿Cómo se crea un objeto en JavaScript?",
-    "answers": [
-      "let obj = { clave: \"valor\" }",
-      "let obj = ( clave: \"valor\" )",
-      "let obj = [ clave: \"valor\" ]",
-      "let obj = clave = \"valor\""
-    ],
+    "id": 7,
+    "question": "¿Qué tipo de dato devuelve la expresión true && false?",
+    "difficulty": "Easy",
+    "answers": ["Boolean", "Number", "String", "Object"],
     "correctAnswer": 0
   },
   {
+    "id": 8,
+    "question": "¿Cuál de los siguientes NO es un tipo de dato en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["Number", "String", "Boolean", "Array"],
+    "correctAnswer": 3
+  },
+  {
     "id": 9,
-    "question": "¿Qué hace el método Array.prototype.filter() en JavaScript?",
-    "answers": [
-      "Filtra los elementos del array que cumplen una condición",
-      "Modifica el array original",
-      "Devuelve el primer elemento que cumple la condición",
-      "Ordena el array"
-    ],
+    "question": "¿Cuál es la forma correcta de crear una función en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["function miFuncion() { }", "def miFuncion() { }", "function: miFuncion() { }", "miFuncion function() { }"],
     "correctAnswer": 0
   },
   {
     "id": 10,
-    "question": "¿Cuál es el resultado del siguiente código?",
-    "code": "let y = 1\\nif (y === '1') { console.log(true) } else { console.log(false) }",
+    "question": "¿Qué operador se usa para comparar igualdad estricta en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["==", "=", "===", "!=="],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "¿Qué método convierte una cadena a mayúsculas en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["toUpperCase()", "toCaps()", "upperCase()", "toUpper()"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "¿Cuál es el valor por defecto de una variable declarada pero no inicializada?",
+    "difficulty": "Easy",
+    "answers": ["0", "undefined", "null", "NaN"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "¿Cuál de las siguientes estructuras es un bucle en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["if", "for", "switch", "catch"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "question": "¿Cómo puedes añadir un elemento al final de un array?",
+    "difficulty": "Easy",
+    "answers": ["push()", "pop()", "shift()", "concat()"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "question": "¿Qué palabra clave se usa para declarar una constante en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["var", "let", "const", "final"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "question": "¿Cuál es el resultado de typeof null en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["object", "null", "undefined", "number"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "¿Qué significa NaN en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["No es un número", "Número aleatorio", "Número de arreglo", "Nombre de una función"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "¿Cuál es el operador de asignación en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["==", "=", "===", "!="],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "question": "¿Qué estructura de control se usa para ejecutar diferentes bloques de código basados en una condición?",
+    "difficulty": "Easy",
+    "answers": ["for", "if", "else", "switch"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "question": "¿Cuál es la salida de la expresión 1 == '1'?",
+    "difficulty": "Easy",
+    "answers": ["true", "false", "undefined", "NaN"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "¿Cómo puedes convertir una cadena a un número entero en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["Number()", "parseInt()", "parseFloat()", "Todas las anteriores"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 22,
+    "question": "¿Cuál es el valor booleano de null en un contexto condicional?",
+    "difficulty": "Easy",
     "answers": ["true", "false", "undefined", "null"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "question": "¿Qué método devuelve la longitud de un array?",
+    "difficulty": "Easy",
+    "answers": ["size", "length", "count", "index"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 24,
+    "question": "¿Cuál es la palabra clave para manejar errores en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["catch", "throw", "try", "Todas las anteriores"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 25,
+    "question": "¿Cuál es el resultado de la operación 10 / 0 en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["Infinity", "undefined", "NaN", "null"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "¿Qué operador se utiliza para sumar dos valores en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["+", "-", "*", "/"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "question": "¿Cuál es el valor de 2 * null en JavaScript?",
+    "difficulty": "Easy",
+    "answers": ["NaN", "2", "null", "0"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 28,
+    "question": "¿Cuál es la forma correcta de incluir un archivo JavaScript en HTML?",
+    "difficulty": "Easy",
+    "answers": ["<script src='archivo.js'></script>", "<js src='archivo.js'></js>", "<script file='archivo.js'></script>", "<javascript src='archivo.js'></javascript>"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "¿Qué propiedad del objeto Math se usa para redondear hacia abajo un número?",
+    "difficulty": "Easy",
+    "answers": ["Math.floor()", "Math.round()", "Math.ceil()", "Math.trunc()"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 30,
+    "question": "¿Cómo puedes detener la ejecución de un bucle for?",
+    "difficulty": "Easy",
+    "answers": ["stop", "break", "exit", "cancel"],
     "correctAnswer": 1
   }
 ]

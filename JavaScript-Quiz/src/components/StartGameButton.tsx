@@ -1,15 +1,14 @@
+import { GameState } from '../lib/constants'
+import { useGameState } from '../store/game'
 import { useQuestionsStore } from '../store/questions'
 
-interface Props {
-  onStart?: () => void
-}
-
-export default function StartGameButton ({ onStart }: Props) {
+export default function StartGameButton () {
   const getQuestions = useQuestionsStore((state) => state.getQuestions)
+  const setGameState = useGameState((state) => state.setState)
 
   const handleClick = () => {
     getQuestions(10)
-    if (onStart) onStart()
+    setGameState(GameState.GAMING)
   }
 
   return (

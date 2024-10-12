@@ -1,9 +1,12 @@
+import type { GameState } from './lib/constants'
+
 export type Theme = 'light' | 'dark'
 
 interface Question {
   id: number
   question: string
   code?: string
+  difficulty: 'Easy' | 'Medium' | 'Hard'
   answers: readonly [string, string, string, string]
   correctAnswer: number
   selectedAnswer?: number
@@ -23,3 +26,6 @@ type StateActions = {
 }
 
 export type State = StateProperties & StateActions
+
+
+export type GameStateType = (typeof GameState)[keyof typeof GameState]

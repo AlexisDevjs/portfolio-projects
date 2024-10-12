@@ -9,35 +9,49 @@ export default function Game () {
     (state) => state.getPreviousQuestion
   )
 
+  const isSelectedAnswer
+    = questions[currentQuestion]?.selectedAnswer !== undefined
+
   return (
-    <section className='ring-1 ring-gray-200 p-4 rounded-sm'>
-      <p className='text-center text-base font-semibold text-gray-800/90'>
-        PREGUNTA {currentQuestion + 1}/{questions.length}
-      </p>
+    <>
+      <div className='ring-1 ring-neutral-200 shadow-[0_5px_10px_rgba(0,0,0,0.3)]'>
+        <section className='flex justify-center items-center gap-5 py-3 border-b border-gray-300'>
+          <button
+            type='button'
+            onClick={getPreviousQuestion}
+            disabled={currentQuestion === 0}
+            className='border border-gray-100'
+          >
+            {'<'}
+          </button>
 
-      <Question question={questions[currentQuestion]} />
+          <h2 className='text-center text-sm font-lato font-semibold text-gray-900'>
+            PREGUNTA {currentQuestion + 1}/{questions.length}
+          </h2>
+          <button
+            type='button'
+            onClick={getNextQuestion}
+            disabled={
+              currentQuestion === questions.length - 1 || !isSelectedAnswer
+            }
+          >
+            {'>'}
+          </button>
+        </section>
 
-      <div className='flex justify-between'>
-        <button
-          type='button'
-          onClick={getPreviousQuestion}
-          disabled={currentQuestion === 0}
-          className='border border-gray-100'
-        >
-          {'< Anterior'}
-        </button>
-
-        <button
-          type='button'
-          onClick={getNextQuestion}
-          disabled={
-            currentQuestion === questions.length - 1
-            || questions[currentQuestion]?.selectedAnswer === undefined
-          }
-        >
-          {'Siguiente >'}
-        </button>
+        <Question question={questions[currentQuestion]} />
       </div>
-    </section>
+
+      <button
+        type='button'
+        onClick={getNextQuestion}
+        disabled={currentQuestion === questions.length - 1 || !isSelectedAnswer}
+        className={`py-3 w-full bg-yellow-300 text-black font-bold text-center ring-1 ring-black/90 ${
+          !isSelectedAnswer ? 'opacity-65' : ''
+        } `}
+      >
+        Siguiente pregunta
+      </button>
+    </>
   )
 }
