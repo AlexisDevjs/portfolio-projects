@@ -1,6 +1,5 @@
 import { useTheme } from '../../hooks/useTheme'
 import { ToggleThemeIcon } from './icons'
-import './toggle-theme.css'
 
 export function ThemeToggle () {
   const { theme, toggleDarkMode } = useTheme()

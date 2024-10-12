@@ -1,6 +1,6 @@
 export default function Footer () {
   return (
-    <footer className='pb-3'>
+    <footer>
       <strong>JS Quizz</strong>,{' '}
       <span className='font-lato'>creado por</span>{' '}
       <a
